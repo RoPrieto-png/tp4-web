@@ -5,10 +5,6 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-*{
-    box-sizing: border-box;
-}
-
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -65,7 +61,7 @@ body {
   line-height: 1.5;
   color: #555555;
   text-align: left;
-  background-color: #ffffff;
+  background-color: #FFFFF6;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -366,10 +362,10 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   line-height: 1.2;
-  color: #787878;
+  color: #686866;
 }
 
 h1, .h1 {
@@ -426,8 +422,8 @@ h6, .h6 {
 }
 
 .display-1 {
-  font-size: 8rem;
-  font-weight: 300;
+  font-size: 7rem;
+  font-weight: 500;
   line-height: 1.2;
 }
 
@@ -2346,7 +2342,7 @@ textarea.form-control {
 }
 
 .btn:hover {
-  color: #555555;
+  color: #B8A1D6;
   text-decoration: none;
 }
 
@@ -2369,35 +2365,35 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  color: #212529;
-  background-color: #DA9F5B;
-  border-color: #DA9F5B;
+  color: #686866;
+  background-color: #B8A1D6;
+  border-color: #B8A1D6;
 }
 
 .btn-primary:hover {
-  color: #212529;
-  background-color: #d38d3c;
-  border-color: #d18731;
+  color: #B8A1D6;
+  background-color: #686866;
+  border-color: #686866;
 }
 
 .btn-primary:focus, .btn-primary.focus {
-  color: #212529;
-  background-color: #d38d3c;
-  border-color: #d18731;
+  color: #686866;
+  background-color: #B8A1D6;
+  border-color: #B8A1D6;
   box-shadow: 0 0 0 0.2rem rgba(190, 141, 84, 0.5);
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
-  color: #212529;
-  background-color: #DA9F5B;
-  border-color: #DA9F5B;
+  color: #686866;
+  background-color: #B8A1D6;
+  border-color: #B8A1D6;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
-  color: #fff;
-  background-color: #d18731;
-  border-color: #c8802d;
+  color: #B8A1D6;
+  background-color: #FFFFF6;
+  border-color: #B8A1D6;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
@@ -4342,7 +4338,7 @@ input[type="button"].btn-block {
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #fff;
+  color: #686866;
 }
 
 .navbar-dark .navbar-toggler {
@@ -4364,72 +4360,6 @@ input[type="button"].btn-block {
 
 .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
   color: #fff;
-}
-
-/*FONDO*/
-/* .imagenEstatica {
-  display: flex;
-
-
-}
-
-.contTextoFondo {
-  display: relative;
-  left: 10%;
-  bottom: 5vh;
-  width: 500px;
-
-
-} */
-.imagenEstatica{
-  width: 100%;
-  height: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-
-  overflow: hidden;
-}
-
-.imagenEstatica.imagenFondo{
-  width: 100vw;
-  height: 100vh;
-}
-
-
-.imagenEstatica.contTextoFondo {
-  background-color: rgba(255,255,255,0.5);
-  /* position: absolute; */
-  width: 45vw;
-  height: 70%;
-  top: 10%;
-  left: 10%;
-  bottom: 10%;
-  right: 70%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.imagenEstatica.contTextoFondo h1 {
-  padding: 0% 5%;
-  font-family: 'Montserrat', italic;
-  text-align:center;
-  font-size: 5.3vw;
-  font-weight: 300;
-  background-color: rgba(1b,25,26,1); 
-}
-
-.imagenEstatica.contTextoFondo h3 {
-  padding: 0% 5%;
-  font-weight: 400;
-  font-family: 'Montserrat', italic;
-  font-size: 1.6vw;
-  background-color: rgba(1b,25,26,1); 
 }
 
 .card {
@@ -9335,7 +9265,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #8A90B8 !important;
+  color: #B8A1D6 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -9599,15 +9529,15 @@ h6,
   padding-right: 15px;
   font-weight: bold;
   letter-spacing: 1px;
-  color: #FFFBF2;
+  color: #686866;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #DA9F5B;
+  color: #B8A1D6;
 }
 
-.overlay-top::before,
+/* .overlay-top::before,
 .overlay-bottom::after {
   position: absolute;
   content: "";
@@ -9615,7 +9545,7 @@ h6,
   height: 15px;
   left: 0;
   z-index: 1;
-}
+} */
 
 .overlay-top::before {
   top: -1px;
@@ -9646,11 +9576,11 @@ h6,
   position: absolute;
   content: "";
   width: 2px;
-  height: 100px;
+  height: 80px;
   top: 0;
   left: 50%;
-  margin-left: 1px;
-  background: #8A90B8;
+  margin-left: 0.5px;
+  background: #B8A1D6;
 }
 
 .service-icon {
@@ -9693,19 +9623,21 @@ h6,
   width: 20px;
   height: 20px;
   border-radius: 20px;
-  background: #DA9F5B;
+  background: #686866;
+  opacity: 50%;
   transition: .5s;
 }
 
 .testimonial-carousel .owl-dot.active {
   width: 40px;
-  background: #33211D;
+  background: #B8A1D6;
+  opacity: 100;
 }
 
-.testimonial-carousel .owl-item img {
+/* .testimonial-carousel .owl-item img {
   width: 80px;
   height: 80px;
-}
+} */
 
 .contact-form .help-block ul {
   margin: 0;
@@ -9713,12 +9645,123 @@ h6,
   list-style-type: none;
 }
 
-.reservation,
+
 .page-header,
 .offer,
 .footer {
-  background: linear-gradient(rgba(51, 33, 29, 0.9), rgba(51, 33, 29, 0.9)), url(../img/bg.jpg);
+  background: url(../img/footer-04-04-04.png);
   background-position: top;
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.static-image-container {
+  position: relative;
+}
+
+.image-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.image-caption h2, .image-caption h1 {
+  margin: 0;
+  padding: 30px; /* Ajusta este valor para cambiar el padding */
+  color: #686866; /* Cambia este valor al color que prefieras */
+  font-family: 'Montserrat', sans-serif; /* Cambia este valor a la fuente que prefieras */
+  line-height: 0.1; /* Ajusta este valor para cambiar la interlinea */
+}
+
+.image-caption h1 {
+  font-size: 5rem; /* Ajusta este valor para cambiar el tamaño de la fuente */
+  line-height: 1; /* Ajusta este valor para cambiar la interlinea del h1 */
+}
+
+.image-caption h2.font-weight-medium {
+  color: #686866; /* Cambia este valor al color que prefieras */
+}
+
+@media (max-width: 768px) {
+  .image-caption {
+      position: static;
+      text-align: left;
+      background: none;
+      padding-top: 10px;
+  }
+  .static-image-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .static-image-container img {
+      width: 100%;
+      height: auto;
+      object-fit: cover; /* Ajusta la imagen para que cubra el contenedor */
+  }
+  .static-image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor */
+    transform: scale(1.2); /* Ajusta este valor para cambiar el tamaño de la imagen en pantallas pequeñas */
+  }
+
+  .image-caption h1 {
+      font-size: 2rem; /* Ajusta este valor para cambiar el tamaño de la fuente en pantallas pequeñas */
+      line-height: 1.3; /* Ajusta este valor para cambiar la interlinea del h1 en pantallas pequeñas */
+      margin-bottom: 15px; /* Ajusta este valor para cambiar el espacio debajo del h1 en pantallas pequeñas */
+  }
+  .image-caption h2 {
+      font-size: 1rem; /* Ajusta este valor para cambiar el tamaño de la fuente en pantallas pequeñas */
+      line-height: 0.5; /* Ajusta este valor para cambiar la interlinea del h2 en pantallas pequeñas */
+      margin-bottom: 1px; /* Ajusta este valor para cambiar el espacio debajo del h2 en pantallas pequeñas */
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.small-title {
+  font-size: 1.25rem; /* Ajusta este valor según tus necesidades */
+  font-weight: 500 !important; /* Asegúrate de que este valor sea 600 para semibold */
+  margin-bottom: 10px; /* Ajusta este valor para cambiar el espacio debajo del título */
+  font-family: 'Montserrat' 
+}
+
+p {
+  font-family: 'Hind+Madurai', sans-serif; /* 
+  font-size: 1rem; /* Ajusta este valor según tus necesidades */
+  color: #686866; /* Cambia este valor al color que prefieras */
+}
+
+.icon-spacing {
+  font-size: 3rem; /* Ajusta este valor para cambiar el tamaño del icono */
+  color: #3498db; /* Cambia este valor al color que prefieras */
+  margin-bottom: 45px; /* Ajusta este valor para cambiar el espacio debajo del icono */
+  display: block; /* Asegura que el margen se aplique correctamente */
+}
+
+.banner img {
+  width: 100%;
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-bottom: 100px; /* Ajusta este valor según tus necesidades */
+}
+
+.reservation {
+  min-height: 500px; /* Ajusta según tus necesidades */ 
+  background-image: url('...img\fondo.png'); /* Reemplaza con la ruta de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mb-2 {
+  color: #FFFFF6;
+}
+
+.bg-custom {
+  background: url(../img/fondo-05.png) no-repeat center center;
   background-size: cover;
 }
