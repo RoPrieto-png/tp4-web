@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>KOPPEE - Coffee Shop HTML Template</title>
+    <title>Teclado inalámbrico G715 - Rocio Prieto Arganaraz</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free Website Template" name="keywords">
     <meta content="Free Website Template" name="description">
@@ -44,22 +44,22 @@
                 </div>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
+                <span><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#686866"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></span>
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav ml-auto p-4">
                     <a href="index.html" class="nav-item nav-link active">Inicio</a>
-                    <a href="index.html" class="nav-item nav-link">Características</a>
-                    <a href="index.html" class="nav-item nav-link">¿Qúe incluye?</a>
-                    <a href="index.html" class="nav-item nav-link">Funcionalidades</a>
+                    <a href="#Características" class="nav-item nav-link">Características</a>
+                    <a href="#incluye" class="nav-item nav-link">¿Qúe incluye?</a>
+                    <a href="#funcionalidades" class="nav-item nav-link">Funcionalidades</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Accesorios</a>
+                        <a href="#ESTILO" class="nav-item nav-link">Accesorios</a>
                         <!-- <div class="dropdown-menu text-capitalize">
                             <a href="reservation.html" class="dropdown-item">Reservation</a>
                             <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                         </div> -->
                     </div>
-                    <a href="index.html" class="nav-item nav-link">Otros Productos</a>
+                    <a href="#Aurora" class="nav-item nav-link">Otros Productos</a>
                 </div>
             </div>
         </nav>
@@ -98,42 +98,51 @@
     <!-- Carousel End -->
 
 <!-- Imagen Estática Start -->
-<div class="container-fluid p-0 mb-5">
+<div class="container-fluid p-0 mb-5" >
     <div class="static-image-container position-relative">
-        <img class="w-100" src="img/portada.jpg" alt="Image">
+        <img class="w-100 h-100 object-fit-cover portada-img" src="img/portada.jpg" alt="Image">
+        <div class="image-caption text-left p-3">
+            <h2 class="font-weight-medium m-0">Teclado G715</h2>
+            <h1 class="display-1 m-0">SUAVE COMO<br>UNA NUBE</h1>
+        </div>
+    </div>
+</div>
+<!-- <div class="container-fluid p-0 mb-5">
+    <div class="static-image-container position-relative">
+        <img class="w-100 portada-img" src="img/portada.jpg" alt="Image">
         <div class="image-caption text-left p-3">
             <h2 class="font-weight-medium m-0 p-4">Teclado G715</h2>
             <h1 class="display-1 m-0">SUAVE COMO<br>UNA NUBE</h1>
         </div>
     </div>
-</div>
+</div> -->
 <!-- Imagen Estática End -->
 
   <!-- caracteristicas principales -->
-  <div class="container-fluid py-5">
+  <div class="container-fluid py-5" id="Características">
     <div class="container">
-        <div class="section-title">
-            <h5 class="text-primary" style="letter-spacing: 2px;">Características principales</h4>
+        <div class="position-relative h-100 text-center titularsimple" >
+            <!--<h5 class="text-primary" style="letter-spacing: 2px;">Características principales</h4>-->
             <h1 class="display-5">HECHO A TU MEDIDA</h1>
         </div>
         <div class="row">
-            <div class="col-lg-4 py-0 py-lg-5">
+            <div class="col-lg-4 py-0 py-lg-5 feature">
                 <div class="position-relative h-100 text-center">
-                    <i class="fa-solid fa-pen fa-2xl icon-spacing" style="color: #b8a1d6;"></i> <!-- Icono añadido -->
+                    <i class="fa-solid fa-pen fa-2xs icon-spacing" style="color: #b8a1d6;"></i> <!-- Icono añadido -->
                     <h5 class="small-title">Ajustes personalizados</h5>
                     <p>Personalizá cada detalle, desde los keycaps intercambiables hasta la iluminación.</p>
                 </div>
             </div>
-            <div class="col-lg-4 py-0 py-lg-5">
+            <div class="col-lg-4 py-0 py-lg-5 feature">
                 <div class="position-relative h-100 text-center">
-                    <i class="fa-solid fa-wifi fa-2xl icon-spacing" style="color: #b8a1d6;"></i> <!-- Icono añadido -->
+                    <i class="fa-solid fa-wifi fa-2xs icon-spacing" style="color: #b8a1d6;"></i> <!-- Icono añadido -->
                     <h5 class="small-title">Conectividad versatil</h5>
                     <p>Disfrutá la libertad inalámbrica con Lightspeed, con bluetooth o USB-C.</p>
                 </div>
             </div>
-            <div class="col-lg-4 py-0 py-lg-5">
+            <div class="col-lg-4 py-0 py-lg-5 feature">
                 <div class="position-relative h-100 text-center">
-                    <i class="fa-solid fa-briefcase fa-2xl icon-spacing" style="color: #b8a1d6;"></i><!-- Icono añadido -->
+                    <i class="fa-solid fa-briefcase fa-2xs icon-spacing" style="color: #b8a1d6;"></i><!-- Icono añadido -->
                     <h5 class="small-title">Portabilidad flexible</h5>
                     <p>Sin teclado numérico, ideal para setups pequeños y fácil de transportar.</p>
                 </div>
@@ -143,67 +152,64 @@
 </div>
 <!-- caracteristicas principales -->  
 
+<!-- Sobre el teclado inicio -->
+<div class="container-fluid my-5" id="incluye">
+    <div class="container">
+      <div class="section-title">
+        <h5 class="text-primary" style="letter-spacing: 2px;">¿Qué incluye?</h5>
+        <h1 class="display-5 text-uppercase">El combo perfecto</h1>
+      </div>
+      <div class="reservation position-relative overlay-top overlay-bottom bg-image">
+        <div class="row align-items-center">
+          <div class="col-lg-6 my-5 my-lg-0">
+            <img src="img/teclado.png" alt="teclado y almohadilla" class="img-fluid">
+          </div>
+          <div class="col-lg-6 my-5 my-lg-0">
+            <div class="p-5">
+              <div class="mb-4">
+                <h2 class="titulo">Elevá tu experiencia</h2>
+              </div>
+              <p class="texto1">Con un diseño compacto, iluminación personalizable y switches mecánicos, el G715 ofrece confort y rendimiento superior para largas sesiones de juego.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Sobre el teclado fin -->
+  
+  <!-- Sobre la nube inicio -->
+  <div class="container-fluid my-5">
+    <div class="container">
+      <div class="reservation position-relative overlay-top overlay-bottom bg-image">
+        <div class="row align-items-center" id="nube">
+          <div class="col-lg-6 my-5 my-lg-0">
+            <div class="p-5">
+              <div class="mb-4">
+                <h2 class="titulo">Comodidad sin Límites</h2>
+              </div>
+              <p class="texto1">Diseñado para acompañar al G715, este apoya muñecas ergonómico te asegura soporte máximo y estilo en cada una de tus partidas.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 my-5 my-lg-0">
+            <img src="img/nube.png" alt="teclado y almohadilla" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Sobre la nube fin -->
+  
 <!--banner inicio-->
 <div class="banner">
     <img src="img/trama.png" alt="Banner">
 </div>
 <!--banner final-->
 
-<!-- Sobre el teclado inicio -->
-    <div class="container-fluid my-5">
-        <div class="container">
-            <div class="section-title">
-                <h5 class="text-primary" style="letter-spacing: 2px;">¿Qué incluye?</h4>
-                <h1 class="display-5 text-uppercase">El combo perfecto</h1>
-            </div>
-          <div class="reservation position-relative overlay-top overlay-bottom bg-image">
-            <div class="row align-items-center">
-              <div class="col-lg-6 my-5 my-lg-0">
-                <img src="img/teclado.png" alt="teclado y almohadilla" class="img-fluid">
-              </div>
-              <div class="col-lg-6 my-5 my-lg-0">
-                <div class="p-5">
-                  <div class="mb-4">
-                    <h2 class="titulo">Elevá tu experiencia</h2>
-                  </div>
-                  <p class="texto1">Con un diseño compacto, iluminación personalizable y switches mecánicos, el G715 ofrece confort y rendimiento superior para largas sesiones de juego.
-
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-<!-- Sobre el teclado fin -->
-
- <!-- Sobre la nube inicio -->
-<div class="container-fluid my-5">
-    <div class="container">
-        <div class="reservation position-relative overlay-top overlay-bottom bg-image">
-            <div class="row align-items-center">
-                <div class="col-lg-6 my-5 my-lg-0">
-                    <div class="p-5">
-                        <div class="mb-4">
-                            <h2 class="titulo">Comodidad sin Límites</h2>
-                        </div>
-                        <p class="texto1">Diseñado para acompañar al G715, este apoya muñecas ergonómico te asegura soporte máximo y estilo en cada una de tus partidas.</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 my-5 my-lg-0">
-                    <img src="img/nube.png" alt="teclado y almohadilla" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Sobre la nube fin -->
-
-
 <!-- Service Start -->
-<div class="container-fluid pt-5">
+<div class="container-fluid pt-5" id="funcionalidades">
     <div class="container">
-        <div class="section-title">
+        <div class="position-relative h-100 text-center titularsimple">
             <h5 class="text-primary" style="letter-spacing: 2px;">Funcionalidades avanzadas</h5>
             <h1 class="display-5">MARCANDO LA DIFERENCIA</h1>
         </div>
@@ -253,6 +259,9 @@
                 </div>
             </div>
         </div>
+        <div class="padding1">
+            
+        </div>
     </div>
 </div>
 <!-- Service End -->
@@ -260,22 +269,22 @@
  <!-- Colores inicio -->
  <div class="container-fluid my-5 bg-custom">
     <div class="container">
-        <div class="section-title">
+        <!--<div class="section-title">
             <h5 class="text-primary" style="letter-spacing: 2px;">Accesorios personalizables</h5>
             <h1 class="display-5">TU TECLADO, TU ESTILO</h1>
-        </div>
-        <div class="reservation position-relative overlay-top overlay-bottom bg-image">
+        </div>-->
+        <div class="reservation position-relative overlay-top overlay-bottom bg-image" id="ESTILO">
             <div class="row align-items-center">
                 <div class="col-lg-6 my-5 my-lg-0">
                     <div class="p-5">
                         <div class="mb-4">
-                            <h3>Estética adaptable</h3>
-                            <h5 class="subtitulo1">Personaliza cada detalle para que tu teclado refleje tu estética unica.</h5>
+                          <h1 class="display-5">TU TECLADO, TU ESTILO</h1>
+                          <h4 class="subt2">Accesorios personalizables</h4>
                         </div>
-                        <h6 class="mb-3"><i class="fa-solid fa-circle fa-2xs" style="color: #b8a1d6;"></i>Rosa Pink Dawn</h6>
-                        <h6 class="mb-3"><i class="fa-solid fa-circle fa-2xs" style="color: #b8a1d6;"></i>Verde Green Flash</h6>
-                        <h6 class="mb-3"><i class="fa-solid fa-circle fa-2xs" style="color: #b8a1d6;"></i>Blanco White Mist</h6>
-                    </div>
+                        <h6 class="mb-3"><i class="fa-solid fa-circle fa-2xs" style="color: #b8a1d6; margin-right: 10px;"></i>Rosa Pink Dawn</h6>
+                        <h6 class="mb-3"><i class="fa-solid fa-circle fa-2xs" style="color: #b8a1d6; margin-right: 10px;"></i>Verde Green Flash</h6>
+                        <h6 class="mb-3"><i class="fa-solid fa-circle fa-2xs" style="color: #b8a1d6; margin-right: 10px;"></i>Blanco White Mist</h6>
+                      </div>                      
                 </div>
                 <div class="col-lg-6 my-5 my-lg-0">
                     <img src="img/das.png" alt="teclado y almohadilla" class="img-fluid">
@@ -546,7 +555,7 @@
     <!-- Reservation End -->
 
     <!-- Otros productos inicio-->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" id="Aurora">
         <div class="container">
             <div class="section-title">
                 <h5 class="text-primary" style="letter-spacing: 2px;">Productos Linea Aurora</h4>
@@ -650,8 +659,12 @@
     <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
         <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
             <div class="col-lg-12 mb-5 text-left">
-                <h4 class="text-uppercase mb-4" style="color: #FFFFF6;">Seguinos</h4>
-                <div class="d-flex justify-content-start">
+                <!--<h4 class="text-uppercase mb-4" style="color: #FFFFF6;">Seguinos</h4>-->
+                <img src="img/logo-footer.png">
+                <p class="parrafo-footer" style="color: #FFFFF6; padding-left: 8px;">Logitech es una empresa global especializada en el diseño de periféricos tecnológicos tales como <br>
+                    teclados, ratones, auriculares y más. Sus productos destacan por la innovación, calidad y ergonomía <br> 
+                    mejorando la experiencia digital en diversos entornos.</p>
+                <div class="d-flex justify-content-start" style="padding-left: 8px;">
                     <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -660,7 +673,7 @@
             </div>
         </div>
         <div class="container-fluid text-center border-top mt-4 py-4 px-sm-3 px-md-5" style="border-color: #FFFFF6 !important;">
-            <p class="mb-2">©Logitech. Todos los derechos resevados.</p>
+            <p class="mb-2">© Rocio Prieto Argañaraz <br> DG2 - Catedra belluccia <br> FADU UBA 2024</p>
         </div>
     </div>
     <!-- footer final-->    
