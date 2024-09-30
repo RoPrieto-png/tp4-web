@@ -7419,9 +7419,9 @@ button.bg-dark:focus {
 }
 
 .mt-4,
-.my-4 {
+/*.my-4 {
   margin-top: 1.5rem !important;
-}
+}*/
 
 .mr-4,
 .mx-4 {
@@ -9668,14 +9668,14 @@ h6,
 
 .image-caption h2, .image-caption h1 {
   margin: 0;
-  padding: 30px; /* Ajusta este valor para cambiar el padding */
+  padding: 20px; /* Ajusta este valor para cambiar el padding */
   color: #686866; /* Cambia este valor al color que prefieras */
   font-family: 'Montserrat', sans-serif; /* Cambia este valor a la fuente que prefieras */
   line-height: 0.1; /* Ajusta este valor para cambiar la interlinea */
 }
 
 .image-caption h1 {
-  font-size: 5rem; /* Ajusta este valor para cambiar el tamaño de la fuente */
+  font-size: 3.5rem; /* Ajusta este valor para cambiar el tamaño de la fuente */
   line-height: 1; /* Ajusta este valor para cambiar la interlinea del h1 */
 }
 
@@ -9685,9 +9685,9 @@ h6,
 
 @media (max-width: 768px) {
   .image-caption {
-      position: static;
-      position:relative ;
-      top: 70px;
+      position: static !important;
+      position:relative !important ;
+      top: 70px !important;
       z-index: 1;
   }
   .static-image-container {
@@ -9704,13 +9704,13 @@ h6,
     width: 100%;
     height: auto;
     object-fit: cover; /* Ajusta la imagen para que cubra el contenedor */
-    transform: scale(1.2); /* Ajusta este valor para cambiar el tamaño de la imagen en pantallas pequeñas */
+    transform: scale(1.0); /* Ajusta este valor para cambiar el tamaño de la imagen en pantallas pequeñas */
   }
 
   .image-caption h1 {
       font-size: 50px; /* Ajusta este valor para cambiar el tamaño de la fuente en pantallas pequeñas */
       padding: 0;
-      padding-top: 20px;
+      padding-top: 30px;
   }
   .image-caption h2 {
       font-size: 30px; /* Ajusta este valor para cambiar el tamaño de la fuente en pantallas pequeñas */
@@ -9757,7 +9757,8 @@ p {
 }
 
 .mb-2 {
-  color: #FFFFF6;
+  color: #787878;
+  opacity: 60%;
 }
 
 .bg-custom {
@@ -9766,15 +9767,15 @@ p {
 }
 
 .titularsimple{
-  padding-top: 65px;
+  padding-top: 45px;
   padding-right: 0px;
   padding-bottom: 35px;
   padding-left: 0px
 }
 
-.padding1{
+/*.padding1{
   padding-bottom: 100px;
-}
+}*/
 
 .logo1{
   padding-top: 0px;
@@ -9830,3 +9831,53 @@ p {
 }
 }
 
+@media (max-width: 768px) {
+  .banner {
+    overflow: hidden; /* Esto hará que el exceso de la imagen quede recortado */
+    width: 100vw; /* Asegura que el banner ocupe todo el ancho de la pantalla */
+    height: 30vh; /* Ajusta la altura del contenedor para que sea visible todo el alto */
+  }
+
+  .banner img {
+    height: 100%; /* Mantiene la altura al 100% del contenedor */
+    width: auto; /* Mantiene las proporciones de la imagen */
+  }
+}
+
+/* CSS para la versión responsive */
+@media (max-width: 768px) {
+  #incluye .row .col-lg-6 {
+    margin-bottom: 2px; /* Ajusta este valor según el espaciado deseado */
+  }
+}
+
+.image-caption {
+  position: absolute;
+  top: 60%; /* Ajusta este valor para mover los textos más arriba */
+  left: 53%;
+  transform: translate(-50%, -30%); /* Asegúrate de que se mantenga centrado horizontalmente */
+}
+
+.logofooter{
+  padding-left: 3.7%;
+}
+
+@media (max-width: 768px) {
+  /* Eliminar márgenes de la sección del teclado */
+  #incluye .my-5,
+  #incluye .mb-5 {
+    margin-bottom: 0 !important; /* Elimina el margen inferior */
+    margin-top: 0 !important; /* Elimina el margen superior */
+  }
+
+  /* Eliminar márgenes de la sección de la nube */
+  #nube .my-5,
+  #nube .mb-5 {
+    margin-bottom: 0 !important; /* Elimina el margen inferior */
+    margin-top: 0 !important; /* Elimina el margen superior */
+  }
+}
+
+.custom-line-height {
+  line-height: 1.35; /* Ajusta el valor según el interlineado que desees */
+}
